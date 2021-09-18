@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!-<![endif]-->
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tarea2</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/estilos.css">
+
+        <!--boostrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+        <!--google-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <nav class="navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand">
+                  <img src="imagenes/logo_escuela.jpg" alt="imagenPucv" width="320" height="100">
+                  <!--cambiar al estilos css-->
+              </a>
+            </div>
+        </nav>
+        <div class="container">
+            <form id="formularioCompleto" class="row needs-validation" novalidate><!--novalidate deja la responsabilidad a ts-->
+                    <div class="col-md-6">
+                        <label for="nombre" class="form-label">Nombre completo</label>
+                        <input type="text" class="form-control" id="nombre" pattern="[a-zA-Z]+" placeholder="Aaaa Bbbb Cccc" required>
+                        <div class="valid-feedback">
+                            Nombre valido
+                        </div>
+                        <div class="invalid-feedback">
+                            Ingrese su nombre
+                        </div>  
+                    </div>
+                    <div class="col-md-3">
+                        <label for="Rut" class="form-label">RUT</label>
+                        <input type="text" class="form-control" id="Rut" pattern="[0-9K-K]+" maxlength="9" minlength="9" placeholder="111111111" required>
+                        <div class="valid-feedback">
+                            RUT en formato correcto
+                        </div>
+                        <div class="invalid-feedback">
+                            Ingrese su RUT sin guion, sin puntos y con digito verificador (K)
+                        </div>   
+                    </div>
+                        
+                    <div class="col-md-6">
+                        <label for="Email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="Email" placeholder="Ejemplo@gmail.com" required>
+                        <div class="valid-feedback">
+                            Email en fortmato correcto
+                        </div>
+                        <div class="invalid-feedback">
+                            Email invalido
+                        </div>   
+                    </div> 
+                
+                    <div class="col-md-3">
+                        <label for="telefono" class="form-label">Teléfono Móvil</label>
+                        <input type="number" class="form-control" id="telefono" min="900000000" max="999999999" placeholder="941414141" required>
+                        <div class="valid-feedback">
+                            Numero valido
+                        </div>
+                        <div class="invalid-feedback">
+                            Ingrese su numerto de telefono con solo 9 digitos
+                        </div>   
+                    </div>
+                
+                     
+                    <ul id="LenguajesDeInteres">
+                        <li>
+                            <div>
+                                <h2>Lenguajes De Interes</h2>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="LPython" >
+                                <label>Python</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="LTypeScript">
+                                <label>TypeScript</label>
+                              </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="LC++">
+                                <label>C++</label>
+                            </div>
+                        
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="LC#">
+                                <label>C#</label>
+                            </div>
+                        
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="LPHP">
+                                <label>PHP</label>
+                            </div>
+                        
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="LRubyOnRails">
+                                <label>Ruby on Rails</label>
+                            </div>
+                        
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="LJava">
+                                <label>Java</label>
+                            </div>
+                        
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="LR">
+                                <label>R</label>
+                            </div>
+                        
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="LGroovy">
+                                <label>Groovy</label>
+                            </div>
+                        
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="LGo">
+                                <label>Go</label>
+                            </div>
+                        
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="LSwift">
+                                <label>Swift</label>
+                            </div>
+                        
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="LKotlin">
+                                <label>Kotlin</label>
+                            </div>
+
+                        </li>
+                    </ul>  
+                    <ul id="NivelDeProgramacion">
+                        <li>
+                            <div>
+                                <h2>Nivel de programacion</h2>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <label>Alto</label>
+                                <input class="form-check-input 3" type="radio" name="nivel" id="nivelAlto1" required>
+                                <div class="invalid-feedback">
+                                    seleccione uno
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input 3" type="radio" name="nivel" id="nivelMedio2" required>
+                                <label>Medio</label>
+                                <div class="invalid-feedback">
+                                    seleccione uno
+                                </div>
+                              </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input 3" type="radio" name="nivel" id="nivelMedio3" required>
+                                <label>Bajo</label>
+                                <div class="invalid-feedback">
+                                    seleccione uno
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul id="NivelDeConociminetosEnLenguajesEspecificos">
+                        <li>
+                            <div>
+                                <h2>Nivel de conocimineto</h2>
+                            </div>
+                        </li>
+                        <li>
+                            <label>Conocimineto en Python</label>
+                            <input type="range" class="form-range" min="0" max="2" id="customRange1">
+                            <div class="label-container">
+                                <div class="label-slider">Bajo</div>
+                                <div class="label-slider">Medio</div>
+                                <div class="label-slider">Alto</div>
+                            </div>
+                        </li>
+                        <li>
+                            <label>Conocimineto en Java</label>
+                            <input type="range" class="form-range" min="0" max="2" id="customRange2">
+                            <div class="label-container">
+                                <div class="label-slider">Bajo</div>
+                                <div class="label-slider">Medio</div>
+                                <div class="label-slider">Alto</div>
+                            </div>
+                        </li>
+                        <li>
+                            <label>Conocimineto en C++</label>
+                            <input type="range" class="form-range" min="0" max="2" id="customRange3">
+                            <div class="label-container">
+                                <div class="label-slider">Bajo</div>
+                                <div class="label-slider">Medio</div>
+                                <div class="label-slider">Alto</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul id="AsignaturaMasDificilies">
+                        <li>
+                            <div>
+                                <h2>Asignaturas mas dificiles a su criterio</h2>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input 2" type="checkbox" id="LEstructura">
+                                <label>Estructura de Datos</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input 2" type="checkbox" id="LInteligencia">
+                                <label>Inteligencia Artificial</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input 2" type="checkbox" id="LInteraccion">
+                                <label>Interaccion Humano-Computador</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input 2" type="checkbox" id="LSistema">
+                                <label>Sistemas Operativos</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mb-3">
+                                <label>Otro</label>
+                                <input type="text" class="form-control was-validated" id="otro" placeholder="Aaaa Bbbb Cccc">
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="mb-3">
+                        <label>Opinion Sobre Escuela</label>
+                        <textarea class="form-control was-validated" id="AreaOpinion" maxlength="500" rows="3" required></textarea>
+                        <div class="invalid-feedback">
+                            Ingrese su opinion sobre la escuela
+                        </div>
+                    </div>
+                   
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Enviar</button>
+                        <button class="btn btn-primary" type="reset">Cancelar</button>
+                    </div>
+            </form>
+        </div>
+
+        <script data-main="js/inicio" src="js/require-jquery.js"></script>
+        
+        <script src="js/validacion.js" async></script>
+        
+        
+    </body>
+</html>

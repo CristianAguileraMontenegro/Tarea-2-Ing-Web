@@ -1,0 +1,95 @@
+form {
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+}
+
+.valid-feedback {
+  font-family: 'Bona Nova', serif;
+  font-weight: bold;
+}
+
+.invalid-feedback {
+  font-family: 'Bona Nova', serif;
+  font-weight: bold;
+}
+
+label {
+  font-family: 'Bona Nova', serif;
+  font-weight: bold;
+}
+
+#LenguajesDeInteres {
+  margin-top: 20px;
+}
+
+#LenguajesDeInteres li div h2 {
+  font-size: 100%;
+  font-family: 'Bona Nova', serif;
+  font-weight: bold;
+}
+
+#NivelDeProgramacion {
+  margin-top: 20px;
+}
+
+#NivelDeProgramacion li div h2 {
+  font-size: 100%;
+  font-family: 'Bona Nova', serif;
+  font-weight: bold;
+}
+
+#NivelDeConociminetosEnLenguajesEspecificos {
+  margin-top: 20px;
+}
+
+#NivelDeConociminetosEnLenguajesEspecificos li div h2 {
+  font-size: 100%;
+  font-family: 'Bona Nova', serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+#AsignaturaMasDificilies {
+  margin-top: 20px;
+}
+
+#AsignaturaMasDificilies li div h2 {
+  font-size: 100%;
+  font-family: 'Bona Nova', serif;
+  font-weight: bold;
+}
+
+#mensajeDeError1 {
+  font-family: 'Bona Nova', serif;
+  font-weight: bold;
+  color: #0c09ca;
+}
+
+#mensajeDeError2 {
+  font-family: 'Bona Nova', serif;
+  font-weight: bold;
+  color: #0c09ca;
+}
+
+.label-container {
+  margin-top: 0.5rem;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /*para que se desplacen uniformemente en la linea*/
+  margin-bottom: 10px;
+}
+
+.label-slider {
+  color: #3949ab;
+  font-size: 15px;
+}
+/*# sourceMappingURL=estilos.css.map */
